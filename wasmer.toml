@@ -1,6 +1,0 @@
-[package]
-name = "vn-eaa2"
-version = "0.1.0"
-
-[fs]
-public = "./"
