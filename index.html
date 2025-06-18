@@ -87,7 +87,7 @@
   </ul>
   <p>Никаких громких обещаний — только честные результаты и поддержка.</p>
   <p class="note">📌 Все детали и запись на запуск доступны по ссылке ниже</p>
-  <a href="https://puziryov.com/use/eaa-ru-mainbot-tg/" target="_blank" class="button">Подробнее → в Telegram</a>
+  <a href="#" onclick="trackAndGoToEAA()" class="button">Подробнее → в Telegram</a>
 </div>
 
 <!-- Facebook Pixel Code -->
@@ -102,11 +102,20 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '3153750001397422');
   fbq('track', 'PageView');
+  fbq('trackCustom', 'PageView_TG_BOT_EAA_VN');
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=3153750001397422&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
+<script>
+  function trackAndGoToEAA() {
+    fbq('trackCustom', 'Click_TG_BOT_EAA_VN');
+    setTimeout(function() {
+      window.open('https://puziryov.com/use/eaa-ru-mainbot-tg/', '_blank');
+    }, 300);
+  }
+</script>
 </body>
 </html>
