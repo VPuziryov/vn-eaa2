@@ -1,121 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Реклама, которая работает</title>
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #222;
-  }
-  .container {
-    background: #fff;
-    max-width: 400px;
-    width: 90%;
-    padding: 20px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  img {
-    max-width: 100%;
-    border-radius: 6px;
-  }
-  h1 {
-    font-size: 22px;
-    margin: 16px 0 10px 0;
-    font-weight: 700;
-  }
-  p, ul {
-    font-size: 14px;
-    margin: 8px 0;
-    line-height: 1.4;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: left;
-  }
-  ul li {
-    margin: 8px 0;
-    padding-left: 20px;
-    position: relative;
-  }
-  ul li:before {
-    content: "♦";
-    position: absolute;
-    left: 0;
-    color: #0a74da;
-    font-weight: bold;
-  }
-  .button {
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #0a74da;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 6px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .note {
-    font-size: 12px;
-    color: #555;
-    margin-top: 12px;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Реклама, которая работает</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+    }
+    .container {
+      background: #fff;
+      max-width: 400px;
+      width: 90%;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    h1 {
+      font-size: 22px;
+      margin: 16px 0 10px 0;
+      font-weight: 700;
+    }
+    p, ul {
+      font-size: 14px;
+      margin: 8px 0;
+      line-height: 1.4;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+    }
+    ul li {
+      margin: 8px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li:before {
+      content: "♦";
+      position: absolute;
+      left: 0;
+      color: #0a74da;
+      font-weight: bold;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #0a74da;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .note {
+      font-size: 12px;
+      color: #555;
+      margin-top: 12px;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-  <img src="https://i.imgur.com/m0ZIw7H.jpeg" alt="Реклама, которая работает" />
-  <h1>Реклама, которая работает — без шума и лишних слов</h1>
-  <p>Многие думают, что реклама — это сложно и дорого. Но на самом деле всё просто:</p>
-  <ul>
-    <li>запускаем через мой кабинет — без головной боли</li>
-    <li>первые заявки появляются уже через пару дней</li>
-    <li>подходит для аренды, фриланса, услуг и небольших бизнесов</li>
-  </ul>
-  <p>Никаких громких обещаний — только честные результаты и поддержка.</p>
-  <p class="note">📌 Все детали и запись на запуск доступны по ссылке ниже</p>
-  <a href="#" onclick="trackAndGoToEAA()" class="button">Подробнее → в Telegram</a>
-</div>
+  <div class="container">
+    <img src="https://i.imgur.com/m0ZIw7H.jpeg" alt="Реклама, которая работает" />
+    <h1>Реклама, которая работает — без шума и лишних слов</h1>
+    <p>Многие думают, что реклама — это сложно и дорого. Но на самом деле всё просто:</p>
+    <ul>
+      <li>запускаем через мой кабинет — без головной боли</li>
+      <li>первые заявки появляются уже через пару дней</li>
+      <li>подходит для аренды, фриланса, услуг и небольших бизнесов</li>
+    </ul>
+    <p>Никаких громких обещаний — только честные результаты и поддержка.</p>
+    <p class="note">📌 Все детали и запись на запуск доступны по ссылке ниже</p>
+    <a href="#" onclick="trackAndGoToEAA()" class="button">Подробнее → в Telegram</a>
+  </div>
 
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '3153750001397422');
-  fbq('track', 'PageView');
-  fbq('trackCustom', 'PageView_TG_BOT_EAA_VN');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=3153750001397422&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3153750001397422');
+    fbq('track', 'PageView');
+    fbq('trackCustom', 'ViewContent_vn-eaa_7s');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=3153750001397422&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
 
-<script>
-  function trackAndGoToEAA() {
-    fbq('trackCustom', 'Click_TG_BOT_EAA_VN');
-    setTimeout(function() {
-      window.open('https://puziryov.com/use/eaa-ru-mainbot-tg/', '_blank');
-    }, 300);
-  }
-</script>
+  <script>
+    function trackAndGoToEAA() {
+      fbq('track', 'Subscribe');
+      fbq('trackCustom', 'Click_TG_BOT_EAA_VN');
+      setTimeout(function() {
+        window.open('https://puziryov.com/use/eaa-ru-mainbot-tg/', '_blank');
+      }, 300);
+    }
+  </script>
 </body>
 </html>
