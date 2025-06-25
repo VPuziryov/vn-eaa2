@@ -102,7 +102,10 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '3153750001397422');
     fbq('track', 'PageView');
-    fbq('trackCustom', 'ViewContent_vn-eaa_7s');
+
+    setTimeout(function() {
+      fbq('trackCustom', 'ViewContent_vn-eaa_7s');
+    }, 7000);
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
